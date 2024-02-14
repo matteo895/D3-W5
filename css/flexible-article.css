@@ -1,0 +1,40 @@
+body {
+  margin: 0%;
+}
+
+.container {
+  max-width: 100%;
+  padding: 2rem;
+  border-radius: 3rem;
+  margin: 2rem;
+  align-items: center;
+  display: flex;
+  background-color: #fbf7e3;
+}
+
+#text {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  align-self: flex-start;
+}
+
+#photo img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 570px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #text {
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  #photo {
+    margin-top: 2rem;
+  }
+}
